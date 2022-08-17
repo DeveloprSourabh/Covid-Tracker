@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card__inner {
@@ -16,11 +17,31 @@ body {
   font-size: 31px;
   font-weight: bolder;
   margin-bottom: 3rem;
-  padding: 2rem;
+  padding: 0rem;
   padding-top: 0;
   text-shadow: 4px -5px 7px black;
   color: white;
   line-height: 2rem;
+}
+
+h1 {
+  background-color: rgb(69, 241, 184);
+  width: 50%;
+  margin-left: 16rem;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2rem;
+  border-radius: 48%;
+}
+
+h2 {
+  background-color: aquamarine;
+  width: fit-content;
+  margin-left: 12.5rem;
+  border-radius: 48%;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2rem;
 }
 
 .card__name {
@@ -43,3 +64,13 @@ ul {
   margin-top: 4rem;
   margin-left: 7rem;
 }
+
+.card__inner:hover {
+  box-shadow: 0px 2px 14px 0px #313332;
+  background-color: aqua;
+}
+
+.card__total:hover {
+  text-shadow: 6px 8px 5px #7e7171;
+}
+
