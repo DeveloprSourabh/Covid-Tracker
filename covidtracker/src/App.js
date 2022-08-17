@@ -1,11 +1,12 @@
 import React from "react";
+import Covid from "./components/Covid";
 
-export const App = () => {
+const App = () => {
   return (
     <>
-      <h1>Hello World!</h1>
+      <Covid />
     </>
-  );
-};
+  )
+}
 
 export default App;

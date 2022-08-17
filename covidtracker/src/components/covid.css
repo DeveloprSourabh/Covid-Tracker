@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+}
+
+.card__inner {
+  background-color: cadetblue;
+  width: fit-content;
+  height: 7rem;
+  line-height: 1rem;
+  width: 17rem;
+  padding-left: 2rem;
+  height: 9rem;
+}
+
+.card__total {
+  font-size: 31px;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  padding-top: 0;
+  text-shadow: 4px -5px 7px black;
+  color: white;
+}
+
+.card__name {
+  padding: 2rem;
+  padding-bottom: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #090502;
+}
+
+li {
+  display: flex;
+}
+
+.row {
+  padding-bottom: 2rem;
+}
+
+ul {
+  margin-top: 4rem;
+  margin-left: 7rem;
+}
