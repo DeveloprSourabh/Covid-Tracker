@@ -20,6 +20,7 @@ body {
   padding-top: 0;
   text-shadow: 4px -5px 7px black;
   color: white;
+  line-height: 2rem;
 }
 
 .card__name {

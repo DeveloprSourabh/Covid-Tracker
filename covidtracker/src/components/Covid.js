@@ -2,15 +2,14 @@ import { useEffect, useState } from "react";
 import "./covid.css";
 
 export const Covid = () => {
-
-const[data, setData] = useState([]);
+  const [data, setData] = useState([]);
 
   const getCovidData = async () => {
     try {
       const res = await fetch("https://data.covid19india.org/data.json#");
       const actualData = await res.json();
       console.log(actualData.statewise[0]);
-      setData(actualData.statewise[0])
+      setData(actualData.statewise[0]);
     } catch (error) {
       console.log(error);
     }
@@ -58,7 +57,7 @@ const[data, setData] = useState([]);
                     <p className="card__name">
                       <span> TOTAL </span> CONFIRMED
                     </p>
-                    <p className="card__total card__small">INDIA</p>
+                    <p className="card__total card__small">{data.confirmed}</p>
                   </div>
                 </div>
               </li>
@@ -72,7 +71,7 @@ const[data, setData] = useState([]);
                     <p className="card__name">
                       <span> TOTAL </span> DEATHS
                     </p>
-                    <p className="card__total card__small">INDIA</p>
+                    <p className="card__total card__small">{data.deaths}</p>
                   </div>
                 </div>
               </li>
@@ -84,7 +83,7 @@ const[data, setData] = useState([]);
                     <p className="card__name">
                       <span> TOTAL </span> ACTIVE
                     </p>
-                    <p className="card__total card__small">INDIA</p>
+                    <p className="card__total card__small">{data.active}</p>
                   </div>
                 </div>
               </li>
@@ -96,7 +95,9 @@ const[data, setData] = useState([]);
                     <p className="card__name">
                       <span> OUR </span> UPDATE
                     </p>
-                    <p className="card__total card__small">INDIA</p>
+                    <p className="card__total card__small">
+                      {data.lastupdatedtime}
+                    </p>
                   </div>
                 </div>
               </li>
